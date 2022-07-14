@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    amd: true,
+    node: true
   },
   extends: [
     "plugin:prettier/recommended",
@@ -25,5 +26,14 @@ module.exports = {
     "react/prop-types": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
+  },
+  globals: {
+    window: true,
+    module: true
   }
 };
