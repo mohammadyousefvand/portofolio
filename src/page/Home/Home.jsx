@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../components/Button/Button";
 import "./Home.css";
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
         <span className="hello-text">Hello, I'm</span>
         <span className="name-text">Mohammad Yousefvand</span>
         <span className="job-text">Front End Developer</span>
-        <button className="download-Cv">Download CV</button>
+        <Button content={"Download CV"} />
       </div>
     </div>
   );

@@ -56,19 +56,6 @@
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.download-Cv {
-  width: 160px;
-  height: 40px;
-  background-color: var(--secondry-color);
-  border-radius: 10px;
-  font-size: 1rem;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
-.download-Cv:hover {
-  opacity: 0.8;
-}
 
 @media screen and (max-width: 1024px) {
   .home {
