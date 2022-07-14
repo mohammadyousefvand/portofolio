@@ -1,0 +1,25 @@
+.home {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  width: 50%;
+  padding: 30px;
+}
+
+.avatar-image {
+  width: 300px;
+}
+
+.avatar-image::before {
+  content: "";
+  width: 300px;
+  height: 300px;
+  background-color: var(--secondry-color);
+  position: absolute;
+}
+
+.myName {
+  background-color: yellow;
+  width: 50%;
+}
