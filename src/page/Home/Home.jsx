@@ -5,7 +5,9 @@ function Home() {
   return (
     <div className="home w-full flex">
       <div className="avatar flex center">
-        <img className="avatar-image" src="" alt="" />
+        <div className="image-box">
+          <img className="avatar-image" src="image/me.jpg" alt="" />
+        </div>
       </div>
       <div className="myName flex center">hasan</div>
     </div>
