@@ -34,3 +34,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.p-x{
+  padding: 0 16px;
+}
