@@ -11,7 +11,7 @@ function Home() {
         </div>
       </div>
       <div className="myName-container flex center">
-        <span className="hello-text">Hello, I'm</span>
+        <span className="hello-text">Hello, Im</span>
         <span className="name-text">Mohammad Yousefvand</span>
         <span className="job-text">Front End Developer</span>
         <Button content={"Download CV"} />

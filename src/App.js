@@ -1,6 +1,7 @@
-import './App.css';
-import Header from './page/Header/Header';
-import Home from './page/Home/Home';
+import React from "react";
+import "./App.css";
+import Header from "./page/Header/Header";
+import Home from "./page/Home/Home";
 
 function App() {
   return (
