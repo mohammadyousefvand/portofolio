@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 1024px) {
   .home {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 40px;
   }
 
