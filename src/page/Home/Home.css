@@ -2,7 +2,7 @@
   flex-direction: row-reverse;
 }
 
-.avatar {
+.avatar-container {
   width: 50%;
   padding: 40px;
 }
@@ -13,11 +13,11 @@
   cursor: pointer;
 }
 
-.image-box {
+.avatar-image-box {
   position: relative;
 }
 
-.image-box::before {
+.avatar-image-box::before {
   content: "";
   width: 350px;
   height: 350px;
@@ -28,14 +28,41 @@
   border-radius: 10px;
   transform: rotate(45deg);
   z-index: -1;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
-.image-box:hover::before {
+.avatar-image-box:hover::before {
   transform: rotate(130deg);
 }
 
-.myName {
-  background-color: yellow;
+.myName-container {
   width: 50%;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hello-text {
+  font-size: 1.5rem;
+}
+.name-text {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.job-text {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.download-Cv {
+  width: 160px;
+  height: 40px;
+  background-color: var(--secondry-color);
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.download-Cv:hover{
+  opacity: .8;
 }

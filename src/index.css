@@ -9,6 +9,7 @@
   border: none;
   outline: none;
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 :root {
