@@ -1,10 +1,12 @@
-import React from 'react'
-import './Header.css'
+import React from "react";
+import "./Header.css";
 
 function Header() {
   return (
-    <div>Header</div>
-  )
+    <header className="header h-full flex">
+      <div className="logo">Mohammad</div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;
