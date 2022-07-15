@@ -1,0 +1,32 @@
+.about {
+  padding: 50px 16px;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+
+.about-title {
+  color: var(--secondry-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  padding-left: 45px;
+}
+
+.about-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  background-color: var(--secondry-color);
+  border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
+}
+
+.about-description {
+  max-width: 600px;
+  color: #fff;
+  font-size: 1.1rem;
+  word-wrap: normal;
+}
