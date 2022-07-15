@@ -21,20 +21,17 @@
 
 .avatar-image-box::before {
   content: "";
-  width: 350px;
-  height: 350px;
+  width: 450px;
+  height: 450px;
   background-color: var(--secondry-color);
   position: absolute;
-  top: 30px;
-  left: -20px;
-  border-radius: 10px;
+  top: 0px;
+  left: -60px;
+  border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
+
   transform: rotate(45deg);
   z-index: -1;
   transition: all 0.3s ease;
-}
-
-.avatar-image-box:hover::before {
-  transform: rotate(130deg);
 }
 
 .myName-container {
@@ -69,35 +66,35 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .home {
     gap: 10px;
   }
 
   .avatar-image {
-    width: 250px;
+    width: 200px;
   }
 
   .avatar-image-box::before {
-    width: 240px;
-    height: 240px;
-    top: 20px;
-    left: 6px;
+    width: 280px;
+    height: 280px;
+    top: 0px;
+    left: -35px;
   }
 
-  .avatar-image-box{
+  .avatar-image-box {
     border-bottom: 3px solid var(--secondry-color);
   }
 
-  .hello-text{
+  .hello-text {
     font-size: 1.3rem;
   }
 
-  .name-text{
+  .name-text {
     font-size: 1.5rem;
   }
 
-  .job-text{
+  .job-text {
     font-size: 1rem;
   }
 }
