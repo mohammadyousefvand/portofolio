@@ -18,7 +18,10 @@ function ProgressBar({ value, title }) {
             pathColor: "#264de4",
             textColor: "#3f87e0"
           }),
-          ...(title === "JS" && { pathColor: "#f0db4f", textColor: "#f0db4f" }),
+          ...(title === "Javascript" && {
+            pathColor: "#f0db4f",
+            textColor: "#f0db4f"
+          }),
           ...(title === "React" && {
             pathColor: "#61DBFB",
             textColor: "#61DBFB"

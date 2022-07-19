@@ -2,3 +2,19 @@
   padding: 20px 16px;
   gap: 16px;
 }
+
+.skill-Box {
+  width: 50%;
+  background-color: #221266;
+  border-radius: 10px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  width: 50%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
