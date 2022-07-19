@@ -1,10 +1,35 @@
 .skills {
-  padding: 20px 16px;
+  padding: 50px 16px;
+  flex-direction: column;
+}
+
+.skill-container {
+  padding: 20px 0;
   gap: 16px;
+}
+
+.skills-title {
+  color: var(--secondry-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  padding-left: 45px;
+}
+
+.skills-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  background-color: var(--secondry-color);
+  border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
 }
 
 .skill-Box {
   width: 50%;
+  height: 250px;
   background-color: #221266;
   border-radius: 10px;
   padding: 16px;
@@ -25,4 +50,31 @@
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
   justify-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .skill-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .skill-Box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .skill-Box {
+    width: 100%;
+    height: auto;
+  }
+  .skill-item,
+  .second-skill-item {
+    width: 100%;
+  }
+
+  .second-skill-item {
+    margin-top: 20px;
+  }
 }

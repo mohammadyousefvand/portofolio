@@ -23,20 +23,23 @@ function Skills() {
 
   return (
     <div className="skills w-full flex p-x">
-      <div className="skill-Box flex">
-        {firstskillsRef.current.map((skill, index) => (
-          <div key={index} className="skill-item">
-            <SkillBox title={skill.title} value={skill.value} />
-            <ProgressBar value={skill.value} title={skill.title} />
-          </div>
-        ))}
-      </div>
-      <div className="skill-Box flex">
-        {secondskillsRef.current.map((skill, index) => (
-          <div key={index} className="second-skill-item">
-            <SkillBox title={skill} />
-          </div>
-        ))}
+      <span className="skills-title">My Experience</span>
+      <div className="skill-container flex">
+        <div className="skill-Box flex">
+          {firstskillsRef.current.map((skill, index) => (
+            <div key={index} className="skill-item">
+              <SkillBox title={skill.title} value={skill.value} />
+              <ProgressBar value={skill.value} title={skill.title} />
+            </div>
+          ))}
+        </div>
+        <div className="skill-Box flex">
+          {secondskillsRef.current.map((skill, index) => (
+            <div key={index} className="second-skill-item">
+              <SkillBox title={skill} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
