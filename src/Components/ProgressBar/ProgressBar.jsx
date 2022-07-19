@@ -7,7 +7,7 @@ function ProgressBar() {
   const percentage = 66;
   return (
     <div className="progress-skills">
-      <CircularProgressbar value={percentage} text={`${percentage}%`} />;
+      <CircularProgressbar value={percentage} text={`${percentage}%`} />
     </div>
   );
 }

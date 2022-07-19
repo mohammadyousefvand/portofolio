@@ -1,11 +1,12 @@
 import React from "react";
-import ProgressBar from "../../Components/ProgressBar/ProgressBar";
+import SkillBox from "./SkillBox/SkillBox";
 import "./Skills.css";
 
 function Skills() {
   return (
     <div className="skills w-full flex p-x">
-      <ProgressBar />
+      <SkillBox />
+      <SkillBox />
     </div>
   );
 }

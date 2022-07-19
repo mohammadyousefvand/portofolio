@@ -11,7 +11,8 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
-    "plugin:eslint-comments/recommended"
+    "plugin:eslint-comments/recommended",
+    'eslint-plugin-eslint-comments'
   ],
   parserOptions: {
     ecmaFeatures: {
