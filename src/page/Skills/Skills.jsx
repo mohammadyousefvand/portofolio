@@ -6,7 +6,6 @@ function Skills() {
   return (
     <div className="skills w-full flex p-x">
       <SkillBox />
-      <SkillBox />
     </div>
   );
 }

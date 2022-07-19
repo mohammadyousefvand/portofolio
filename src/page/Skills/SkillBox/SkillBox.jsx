@@ -4,8 +4,23 @@ import ProgressBar from "../../../Components/ProgressBar/ProgressBar";
 
 function SkillBox() {
   return (
-    <div className="skill-Box">
-      <ProgressBar />
+    <div className="skill-Box flex">
+      <div className="skill-item">
+        <span className="skill-title">HTML</span>
+        <ProgressBar />
+      </div>
+      <div className="skill-item">
+        <span className="skill-title">CSS</span>
+        <ProgressBar />
+      </div>
+      <div className="skill-item">
+        <span className="skill-title">Javascript</span>
+        <ProgressBar />
+      </div>
+      <div className="skill-item">
+        <span className="skill-title">React</span>
+        <ProgressBar />
+      </div>
     </div>
   );
 }

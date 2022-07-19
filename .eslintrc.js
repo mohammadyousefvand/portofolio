@@ -12,7 +12,7 @@ module.exports = {
     "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "plugin:eslint-comments/recommended",
-    'eslint-plugin-eslint-comments'
+    'plugin:eslint-plugin-eslint-comments'
   ],
   parserOptions: {
     ecmaFeatures: {
