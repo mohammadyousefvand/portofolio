@@ -1,9 +1,14 @@
+.portfolio {
+  flex-direction: column;
+  padding: 50px 16px;
+}
 .portfolio-title {
   color: var(--secondry-color);
   font-size: 1.3rem;
   font-weight: bold;
   position: relative;
   padding-left: 45px;
+  letter-spacing: 1px;
 }
 
 .portfolio-title::before {
@@ -15,4 +20,37 @@
   left: 0;
   background-color: var(--secondry-color);
   border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
+}
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.project-item {
+  background-color: slateblue;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.project-item-coverBox {
+  width: 100%;
+  height: 250px;
+}
+
+.project-item-cover {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-description {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.project-item-btnBox {
+  gap: 10px;
 }

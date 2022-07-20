@@ -14,7 +14,7 @@ function Home() {
         <span className="hello-text">Hello, Im</span>
         <span className="name-text">Mohammad Yousefvand</span>
         <span className="job-text">Front End Developer</span>
-        <Button content={"Download CV"} />
+        <Button content={"Download CV"} width={160} />
       </div>
     </div>
   );
