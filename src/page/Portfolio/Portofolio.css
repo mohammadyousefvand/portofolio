@@ -1,0 +1,18 @@
+.portfolio-title {
+  color: var(--secondry-color);
+  font-size: 1.3rem;
+  font-weight: bold;
+  position: relative;
+  padding-left: 45px;
+}
+
+.portfolio-title::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -5px;
+  left: 0;
+  background-color: var(--secondry-color);
+  border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
+}
