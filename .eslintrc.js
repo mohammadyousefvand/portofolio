@@ -5,14 +5,14 @@ module.exports = {
     node: true
   },
   extends: [
-    "plugin:prettier/recommended",
-    "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:import/errors",
     "plugin:import/warnings",
+    "plugin:import/typescript",
     "plugin:jsx-a11y/recommended",
     "plugin:eslint-comments/recommended",
-    'plugin:eslint-plugin-eslint-comments'
+    "plugin:prettier/recommended"
   ],
   parserOptions: {
     ecmaFeatures: {
