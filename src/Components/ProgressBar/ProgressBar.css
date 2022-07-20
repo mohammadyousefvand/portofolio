@@ -1,4 +1,11 @@
-.progress-skills{
-    width: 80px;
-    height: 80px;
+.progress-skills {
+  width: 80px;
+  height: 80px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-skills:hover {
+  width: 100px;
+  height: 100px;
 }
