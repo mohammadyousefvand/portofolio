@@ -22,6 +22,16 @@ body {
   background-color: var(--primary-color);
 }
 
+/* scrool bar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--secondry-color);
+  border-radius: 50px;
+  width: 5px;
+}
+
 .h-full {
   width: 100%;
 }
@@ -35,6 +45,6 @@ body {
   align-items: center;
 }
 
-.p-x{
+.p-x {
   padding: 0 16px;
 }
