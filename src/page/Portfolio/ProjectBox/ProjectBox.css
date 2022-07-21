@@ -1,0 +1,33 @@
+.project-item {
+  background-color: slateblue;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.project-item-coverBox {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-item-cover {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-item-cover:hover {
+  transform: scale(1.1);
+}
+
+.project-description {
+  margin-top: 15px;
+  color: #fff;
+}
+
+.project-item-btnBox {
+  gap: 10px;
+}
