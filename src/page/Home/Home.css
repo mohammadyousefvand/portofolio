@@ -68,11 +68,11 @@
 
 @media screen and (max-width: 500px) {
   .home {
-    gap: 10px;
+    gap: 30px;
   }
 
   .avatar-image {
-    width: 200px;
+    width: 250px;
   }
 
   .avatar-image-box::before {

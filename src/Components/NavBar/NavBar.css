@@ -1,0 +1,44 @@
+.navBar-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(10, 25, 41, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+  position: fixed;
+  bottom: 10px;
+  z-index: 2;
+  padding: 10px 0;
+  border-radius: 30px;
+}
+
+.navBar-iconBox {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.active {
+  color: #000;
+  background-color: var(--secondry-color);
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 500px) {
+  .navBar-wrapper {
+    display: none;
+  }
+}
