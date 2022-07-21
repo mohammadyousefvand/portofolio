@@ -30,7 +30,7 @@ function ProgressBar({ value, title }) {
                   pathColor: "#61DBFB",
                   textColor: "#61DBFB"
                 }),
-                trailColor: "#130952"
+                trailColor: "#312e66"
               })}
             />
           </div>

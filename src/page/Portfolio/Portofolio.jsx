@@ -10,6 +10,9 @@ function Portofolio() {
         <ProjectBox />
         <ProjectBox />
         <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
+        <ProjectBox />
       </div>
     </div>
   );

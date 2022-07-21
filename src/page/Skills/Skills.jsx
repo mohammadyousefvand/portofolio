@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import SkillBox from "./SkillBox/SkillItem";
+import SkillBox from "./SkillItem/SkillItem";
 import "./Skills.css";
 import ProgressBar from "../../Components/ProgressBar/ProgressBar";
 
