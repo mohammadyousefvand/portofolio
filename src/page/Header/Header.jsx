@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="header h-full flex">
+    <header id="header" className="header h-full flex">
       <div className="logo">Mohammad</div>
     </header>
   );
