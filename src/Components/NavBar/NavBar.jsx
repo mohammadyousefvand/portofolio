@@ -8,21 +8,21 @@ function NavBar() {
   return (
     <div className="navBar-wrapper">
       <div className="nav">
-        <span className="navBar-iconBox active">
+        <a href="#home" className="navBar-iconBox active">
           <AiOutlineHome className="navBar-icon" />
-        </span>
-        <span className="navBar-iconBox">
+        </a>
+        <a href="#about" className="navBar-iconBox">
           <AiOutlineUser className="navBar-icon" />
-        </span>
-        <span className="navBar-iconBox">
+        </a>
+        <a href="#skills" className="navBar-iconBox">
           <FaLaptopCode className="navBar-icon" />
-        </span>
-        <span className="navBar-iconBox">
+        </a>
+        <a href="#portfolio" className="navBar-iconBox">
           <FiMonitor className="navBar-icon" />
-        </span>
-        <span className="navBar-iconBox">
+        </a>
+        <a href="#portfolio" className="navBar-iconBox">
           <AiOutlineMessage className="navBar-icon" />
-        </span>
+        </a>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import ProjectBox from "./ProjectBox/ProjectBox";
 
 function Portofolio() {
   return (
-    <div className="portfolio flex w-full p-x">
+    <div id="portfolio" className="portfolio flex w-full p-x">
       <span className="portfolio-title">My Portofolio</span>
       <div className="project-wrapper">
         <ProjectBox />

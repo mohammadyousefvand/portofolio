@@ -4,7 +4,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="home w-full flex p-x">
+    <div id="home" className="home w-full flex p-x">
       <div className="avatar-container flex center">
         <div className="avatar-image-box">
           <img className="avatar-image" src="image/me.jpg" alt="" />

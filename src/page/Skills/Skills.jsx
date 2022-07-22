@@ -22,7 +22,7 @@ function Skills() {
   ]);
 
   return (
-    <div className="skills w-full flex p-x">
+    <div id="skills" className="skills w-full flex p-x">
       <span className="skills-title">My Experience</span>
       <div className="skill-container flex">
         <div className="skill-Box flex">
