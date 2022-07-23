@@ -30,7 +30,7 @@
 .skill-Box {
   width: 50%;
   height: 250px;
-  background-color: #3b387d;
+  background-color: rgb(22, 59, 91);
   border-radius: 10px;
   padding: 16px;
   flex-wrap: wrap;

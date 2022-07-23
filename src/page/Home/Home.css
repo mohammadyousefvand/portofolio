@@ -52,6 +52,7 @@
 .job-text {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1024px) {
