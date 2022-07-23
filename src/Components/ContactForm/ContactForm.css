@@ -28,6 +28,10 @@
 .textarea:focus {
   border-color: var(--secondry-color);
 }
+.field::placeholder,
+.textarea::placeholder {
+  color: rgb(66, 119, 166);
+}
 
 .error-field {
   border-color: #ff3333;
