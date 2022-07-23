@@ -1,12 +1,8 @@
 import React from "react";
 import "./Error.css";
 
-function Error() {
-  return (
-    <div>
-      <span>...</span>
-    </div>
-  );
+function Error({ children }) {
+  return <div className="err">{children}</div>;
 }
 
 export default Error;

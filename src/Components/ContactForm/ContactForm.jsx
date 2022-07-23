@@ -2,6 +2,7 @@ import React from "react";
 import "./ContactForm.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Error from "../Error/Error";
 
 function ContactForm() {
   const initialValues = {
@@ -40,7 +41,7 @@ function ContactForm() {
                 type="text"
                 placeholder="Your full name"
               />
-              <ErrorMessage name="name" />
+              <ErrorMessage name="name" component={Error} />
             </div>
             <div className="input-Box">
               <Field
@@ -49,7 +50,7 @@ function ContactForm() {
                 type="email"
                 placeholder="Your email"
               />
-              <ErrorMessage name="email" />
+              <ErrorMessage name="email" component={Error} />
             </div>
             <div className="input-Box">
               <Field
@@ -59,7 +60,7 @@ function ContactForm() {
                 type="text"
                 placeholder="Your message"
               />
-              <ErrorMessage name="message" />
+              <ErrorMessage name="message" component={Error} />
             </div>
           </Form>
         );
