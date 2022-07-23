@@ -1,7 +1,17 @@
-.err {
-  color: #ff3333;
-  width: 80%;
+.err-wrapper {
+  align-items: center;
   margin: 0 auto;
-  font-size: 0.9rem;
+  width: 80%;
+  gap: 5px;
   margin-top: 3px;
+}
+
+.err-text {
+  font-size: 0.9rem;
+  color: #ff3333;
+}
+
+.err-icon {
+  color: #ff3333;
+  font-size: 1.2rem;
 }
