@@ -50,7 +50,7 @@ function NavBar() {
           activeClass="active"
           smooth
           spy
-          to="portfolio"
+          to="contact"
           className="navBar-iconBox"
         >
           <AiOutlineMessage className="navBar-icon" />
