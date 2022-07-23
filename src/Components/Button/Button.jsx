@@ -4,7 +4,7 @@ import "./Button.css";
 function Button(props) {
   const { content, width } = props;
   return (
-    <button style={{ width: `${width}px` }} className="button-style">
+    <button style={{ width: `${width}` }} className="button-style">
       {content}
     </button>
   );

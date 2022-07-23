@@ -3,6 +3,7 @@ import "./ContactForm.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Error from "../Error/Error";
+import Button from "../Button/Button";
 
 function ContactForm() {
   const initialValues = {
@@ -62,6 +63,7 @@ function ContactForm() {
               />
               <ErrorMessage name="message" component={Error} />
             </div>
+            <div className="input-Box"></div>
           </Form>
         );
       }}

@@ -16,8 +16,8 @@ function ProjectBox() {
         <span>Lorem ipsum dolor sit amet.</span>
       </div>
       <div className="project-item-btnBox flex">
-        <Button content="Github" width={100} />
-        <Button content="Live demo" width={160} />
+        <Button content="Github" width="100px" />
+        <Button content="Live demo" width="160px" />
       </div>
     </div>
   );
