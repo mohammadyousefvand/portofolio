@@ -64,7 +64,7 @@ function ContactForm() {
               <ErrorMessage name="message" component={Error} />
             </div>
             <div className="input-Box">
-              <Button width="80%" content="Send message" />
+              <Button width="80%" content="Send message" border="5px" />
             </div>
           </Form>
         );
