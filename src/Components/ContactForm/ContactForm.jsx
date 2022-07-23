@@ -12,8 +12,9 @@ function ContactForm() {
     message: ""
   };
 
-  const onSubmit = (value) => {
+  const onSubmit = (value, onSubmitProps) => {
     console.log(value);
+    onSubmitProps.resetForm();
   };
 
   const validationSchema = Yup.object({
@@ -32,7 +33,6 @@ function ContactForm() {
       className="form"
     >
       {(formik) => {
-        console.log(formik);
         return (
           <Form className="form">
             <div className="input-Box">
@@ -64,7 +64,12 @@ function ContactForm() {
               <ErrorMessage name="message" component={Error} />
             </div>
             <div className="input-Box">
-              <Button width="80%" content="Send message" border="5px" />
+              <Button
+                width="80%"
+                content="Send message"
+                border="5px"
+                type="submit"
+              />
             </div>
           </Form>
         );
