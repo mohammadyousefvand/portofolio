@@ -34,11 +34,21 @@ function ContactForm() {
         return (
           <Form className="form">
             <div className="input-Box">
-              <Field className="field" name="name" type="text" />
+              <Field
+                className="field"
+                name="name"
+                type="text"
+                placeholder="Your full name"
+              />
               <ErrorMessage name="name" />
             </div>
             <div className="input-Box">
-              <Field className="field" name="email" type="email" />
+              <Field
+                className="field"
+                name="email"
+                type="email"
+                placeholder="Your email"
+              />
               <ErrorMessage name="email" />
             </div>
             <div className="input-Box">
@@ -47,6 +57,7 @@ function ContactForm() {
                 as="textarea"
                 name="message"
                 type="text"
+                placeholder="Your message"
               />
               <ErrorMessage name="message" />
             </div>

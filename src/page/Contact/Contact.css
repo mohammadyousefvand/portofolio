@@ -23,8 +23,8 @@
   border-radius: 30% 70% 71% 29% / 30% 38% 62% 70%;
 }
 
-.contact-wrapper{
-    gap: 16px;
+.contact-wrapper {
+  gap: 16px;
 }
 
 .contact-info-wrapper,
@@ -34,7 +34,5 @@
   gap: 16px;
   align-items: center;
   justify-content: center;
-  background-color: cornflowerblue;
   padding: 16px;
 }
-
