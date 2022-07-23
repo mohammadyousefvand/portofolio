@@ -33,11 +33,18 @@ function ContactForm() {
       className="form"
     >
       {(formik) => {
+        console.log(formik);
         return (
           <Form className="form">
             <div className="input-Box">
               <Field
-                className="field"
+                className={`field ${
+                  formik.errors.name && formik.touched.name
+                    ? "error-field"
+                    : !formik.errors.name && formik.touched.name
+                    ? "success-field"
+                    : ""
+                }`}
                 name="name"
                 type="text"
                 placeholder="Your full name"
@@ -46,7 +53,13 @@ function ContactForm() {
             </div>
             <div className="input-Box">
               <Field
-                className="field"
+                className={`field ${
+                  formik.errors.email && formik.touched.email
+                    ? "error-field"
+                    : !formik.errors.email && formik.touched.email
+                    ? "success-field"
+                    : ""
+                }`}
                 name="email"
                 type="email"
                 placeholder="Your email"
@@ -55,7 +68,13 @@ function ContactForm() {
             </div>
             <div className="input-Box">
               <Field
-                className="textarea"
+                className={`textarea ${
+                  formik.errors.message && formik.touched.message
+                    ? "error-field"
+                    : !formik.errors.message && formik.touched.message
+                    ? "success-field"
+                    : ""
+                }`}
                 as="textarea"
                 name="message"
                 type="text"

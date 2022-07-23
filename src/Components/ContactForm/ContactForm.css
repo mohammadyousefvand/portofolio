@@ -29,6 +29,14 @@
   border-color: var(--secondry-color);
 }
 
+.error-field {
+  border-color: #ff3333;
+}
+
+.success-field {
+  border-color: green;
+}
+
 .textarea {
   height: 140px;
   resize: none;
