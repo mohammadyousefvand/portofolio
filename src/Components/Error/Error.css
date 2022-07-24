@@ -15,9 +15,3 @@
   color: #ff3333;
   font-size: 1.2rem;
 }
-
-@media screen and (max-width: 550px) {
-  .err-wrapper {
-    width: 100%;
-  }
-}
