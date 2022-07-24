@@ -38,7 +38,9 @@ function ContactForm() {
         return (
           <Form className="form">
             <div className="input-Box">
-              <FcOk className="ok-icon" />
+              {!formik.errors.name && formik.touched.name && (
+                <FcOk className="ok-icon" />
+              )}
               <Field
                 className={`field ${
                   formik.errors.name && formik.touched.name
@@ -54,6 +56,9 @@ function ContactForm() {
               <ErrorMessage name="name" component={Error} />
             </div>
             <div className="input-Box">
+              {!formik.errors.email && formik.touched.email && (
+                <FcOk className="ok-icon" />
+              )}
               <Field
                 className={`field ${
                   formik.errors.email && formik.touched.email
@@ -69,6 +74,9 @@ function ContactForm() {
               <ErrorMessage name="email" component={Error} />
             </div>
             <div className="input-Box">
+              {!formik.errors.message && formik.touched.message && (
+                <FcOk className="ok-icon" />
+              )}
               <Field
                 className={`textarea ${
                   formik.errors.message && formik.touched.message
