@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Error from "../Error/Error";
 import Button from "../Button/Button";
+import { FcOk } from "react-icons/fc";
 
 function ContactForm() {
   const initialValues = {
@@ -37,6 +38,7 @@ function ContactForm() {
         return (
           <Form className="form">
             <div className="input-Box">
+              <FcOk className="ok-icon" />
               <Field
                 className={`field ${
                   formik.errors.name && formik.touched.name
@@ -84,7 +86,7 @@ function ContactForm() {
             </div>
             <div className="input-Box">
               <Button
-                width="80%"
+                width="100%"
                 content="Send message"
                 border="5px"
                 type="submit"

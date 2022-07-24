@@ -9,11 +9,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .field,
 .textarea {
-  width: 80%;
+  width: 100%;
   height: 40px;
   margin: 0 auto;
   border-radius: 5px;
@@ -46,10 +47,9 @@
   resize: none;
 }
 
-@media screen and (max-width: 550px) {
-  .field,
-  .textarea,
-  .err-wrapper {
-    width: 100%;
-  }
+.ok-icon {
+  font-size: 1.4rem;
+  position: absolute;
+  right: 10px;
+  top: 8px;
 }
