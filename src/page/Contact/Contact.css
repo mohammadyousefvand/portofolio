@@ -27,8 +27,7 @@
   gap: 16px;
 }
 
-.contact-field-wrapper,
-.contact-info-wrapper {
+.contact-field-wrapper {
   width: 50%;
   flex-direction: column;
   gap: 16px;
@@ -36,6 +35,26 @@
 }
 
 .contact-info-wrapper {
-  flex-direction: row;
-  flex-wrap: wrap;
+  width: 50%;
+  gap: 16px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (max-width: 880px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-info-wrapper,
+  .contact-field-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contact-info-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -45,3 +45,11 @@
   height: 140px;
   resize: none;
 }
+
+@media screen and (max-width: 550px) {
+  .field,
+  .textarea,
+  .err-wrapper {
+    width: 100%;
+  }
+}

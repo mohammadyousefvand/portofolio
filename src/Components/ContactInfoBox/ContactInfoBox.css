@@ -1,5 +1,5 @@
 .info-box-wrapper {
-  width: 250px;
+  /* width: 100%; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -17,6 +17,10 @@
 .info-send {
   color: var(--secondry-color);
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin-top: 8px;
+}
+
+.info-user-number {
+  font-size: 0.9rem;
 }
