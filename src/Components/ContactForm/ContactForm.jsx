@@ -5,6 +5,7 @@ import * as Yup from "yup";
 import Error from "../Error/Error";
 import Button from "../Button/Button";
 import { FcOk } from "react-icons/fc";
+import axios from "axios";
 
 function ContactForm() {
   const initialValues = {
@@ -13,9 +14,15 @@ function ContactForm() {
     message: ""
   };
 
-  const onSubmit = (value, onSubmitProps) => {
-    console.log(value);
-    onSubmitProps.resetForm();
+  const onSubmit = (values, onSubmitProps) => {
+    axios({
+      method: "POST",
+      url: "https://formspree.io/f/xpzbvoep",
+      data: values
+    }).then((response) => {
+      console.log(response);
+      onSubmitProps.resetForm();
+    });
   };
 
   const validationSchema = Yup.object({
@@ -34,7 +41,6 @@ function ContactForm() {
       className="form"
     >
       {(formik) => {
-        console.log(formik);
         return (
           <Form className="form">
             <div className="input-Box">
