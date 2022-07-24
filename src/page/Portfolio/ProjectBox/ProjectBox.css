@@ -1,5 +1,5 @@
 .project-item {
-  background-color: rgb(22, 59, 91);
+  background-color: var(--box-color);
   padding: 16px;
   border-radius: 10px;
 }

@@ -15,6 +15,7 @@
 :root {
   --primary-color: #0a1929;
   --secondry-color: deepskyblue;
+  --box-color: rgb(22, 59, 91);
 }
 
 body {

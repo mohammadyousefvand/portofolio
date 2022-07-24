@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "../../Components/ContactForm/ContactForm";
+import ContactInfoBox from "../../Components/ContactInfoBox/ContactInfoBox";
 import "./Contact.css";
 
 function Contact() {
@@ -8,9 +9,9 @@ function Contact() {
       <span className="contact-title ">Contact me</span>
       <div className="contact-wrapper flex">
         <div className="contact-info-wrapper flex">
-          <span>...</span>
+          <ContactInfoBox />
         </div>
-        <div className="contact-field-wrapper flex">
+        <div className="contact-field-wrapper flex center">
           <ContactForm />
         </div>
       </div>
