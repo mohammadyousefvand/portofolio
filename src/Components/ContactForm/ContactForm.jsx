@@ -1,17 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactForm.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Error from "../Error/Error";
 import Button from "../Button/Button";
-import { FcOk } from "react-icons/fc";
+import { FcOk, FcLike } from "react-icons/fc";
 import axios from "axios";
 
 function ContactForm() {
+  const [isSend, setIsSend] = useState(false);
   const initialValues = {
     name: "",
     email: "",
     message: ""
+  };
+
+  const resetisSend = (time) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(setIsSend(false));
+      }, time);
+    });
   };
 
   const onSubmit = (values, onSubmitProps) => {
@@ -19,10 +28,16 @@ function ContactForm() {
       method: "POST",
       url: "https://formspree.io/f/xpzbvoep",
       data: values
-    }).then((response) => {
-      console.log(response);
-      onSubmitProps.resetForm();
-    });
+    })
+      .then((response) => {
+        console.log(response);
+        setIsSend(true);
+        onSubmitProps.resetForm();
+        resetisSend(5000);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   };
 
   const validationSchema = Yup.object({
@@ -105,6 +120,14 @@ function ContactForm() {
                 border="5px"
                 type="submit"
               />
+              {isSend && (
+                <div className="flex g-5 thankyou-box">
+                  <span className="thankyou-message">
+                    Thank you for message
+                  </span>
+                  <FcLike className="thankyou-icon" />
+                </div>
+              )}
             </div>
           </Form>
         );

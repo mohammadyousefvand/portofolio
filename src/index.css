@@ -49,3 +49,7 @@ body {
 .p-x {
   padding: 0 16px;
 }
+
+.g-5 {
+  gap: 5px;
+}

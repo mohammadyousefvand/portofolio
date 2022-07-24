@@ -8,7 +8,6 @@
 .input-Box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
@@ -52,4 +51,18 @@
   position: absolute;
   right: 10px;
   top: 8px;
+}
+
+.thankyou-box {
+  align-items: center;
+}
+
+.thankyou-message {
+  color: #4bb543;
+  text-align: left;
+  margin-top: 5px;
+}
+
+.thankyou-icon {
+  font-size: 1.5rem;
 }
