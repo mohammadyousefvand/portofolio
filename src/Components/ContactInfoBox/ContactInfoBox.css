@@ -21,6 +21,10 @@
   margin-top: 8px;
 }
 
+.info-send:hover{
+  text-decoration: underline;
+}
+
 .info-user-number {
   font-size: 0.9rem;
 }
