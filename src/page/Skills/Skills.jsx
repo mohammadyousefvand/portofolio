@@ -16,6 +16,7 @@ function Skills() {
     "Tailwind",
     "Styled-component",
     "Redux",
+    "React Router",
     "Sass",
     "Git/Github",
     "Material UI"

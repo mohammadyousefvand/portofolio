@@ -24,19 +24,7 @@
 
 .project-wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 30px;
   gap: 20px;
-}
-
-@media screen and (max-width: 1024px) {
-  .project-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 668px) {
-  .project-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }

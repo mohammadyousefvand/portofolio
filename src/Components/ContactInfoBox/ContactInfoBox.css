@@ -1,5 +1,4 @@
 .info-box-wrapper {
-  /* width: 100%; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8,6 +7,8 @@
   border-radius: 10px;
   background-color: var(--box-color);
   color: #fff;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .info-icon {
@@ -21,7 +22,7 @@
   margin-top: 8px;
 }
 
-.info-send:hover{
+.info-send:hover {
   text-decoration: underline;
 }
 
