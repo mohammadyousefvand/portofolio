@@ -1,0 +1,25 @@
+.footer {
+  padding: 16px;
+  background-color: var(--secondry-color);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+  gap: 16px;
+}
+
+.footer-link {
+  width: 40px;
+  height: 40px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-bottom: 80px;
+  }
+}

@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import About from "./page/About/About";
 import Contact from "./page/Contact/Contact";
+import Footer from "./page/Footer/Footer";
 import Header from "./page/Header/Header";
 import Home from "./page/Home/Home";
 import Portofolio from "./page/Portfolio/Portofolio";
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Portofolio />
       <Contact />
+      <Footer />
     </div>
   );
 }
