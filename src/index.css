@@ -18,6 +18,10 @@
   --box-color: rgb(22, 59, 91);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   background-color: var(--primary-color);

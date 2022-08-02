@@ -4,8 +4,9 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px 10px 0 0;
-  gap: 20px;
+  gap: 16px;
   margin-top: 50px;
+  position: relative;
 }
 
 .footer-link {
@@ -19,9 +20,29 @@
   border-radius: 10px;
 }
 
-.footer-link:hover .footer-icon{
+.footer-link:hover .footer-icon,
+.move-top {
   color: var(--secondry-color);
-  transition: color .3s ease;
+  transition: color 0.3s ease;
+}
+
+.move-top {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  border: 5px solid var(--secondry-color);
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.move-top:hover {
+  color: var(--secondry-color);
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 500px) {
